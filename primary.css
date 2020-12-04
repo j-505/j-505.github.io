@@ -1,1 +1,149 @@
+/* the styles for the elements */
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	background-color: white;
+}
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+    height: 956px;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+/* the styles for the header */
+header {
+	padding: 1.5em 0 2em 0;
+	border-bottom: 3px solid #931420;
+	background-image: -moz-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -webkit-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: -o-linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+	background-image: linear-gradient(
+	    30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+header h2 {
+	font-size: 175%;
+	color: #800000;
+}
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+}
+header img {
+	float: left;
+	padding: 0 30px;
+}
+.shadow {
+	text-shadow: 2px 2px 2px #800000;
+}
+/* the styles for the main content */
+main {
+    float: left;
+}
+/* the h1 styles for exercise 5-1*/
+/*main h1 {
+	font-size: 150%;
+    border-top: 3px solid #931420;
+    border-bottom: 3px solid #931420;
+    padding: .3em 0;
+} */
+
+main h2 {
+	color: #800000;
+	font-size: 130%;
+	padding: .5em 0 .25em 0;
+}
+main h3 {
+	font-size: 105%;
+	padding-bottom: .25em;
+}
+main img {
+	padding-bottom: 1em;
+}
+main p {
+	padding-bottom: .5em;
+}
+main blockquote {
+	padding: 0 2em;
+	font-style: italic;
+}
+main ul {
+	padding: 0 0 .25em 1.25em;
+    margin-bottom: 15px;
+}
+main li {
+	padding-bottom: .35em;
+    
+}
+main section {
+    width: 525px;
+    float: right;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#sidebarA {
+    width: 215px;
+    float: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+#sidebarA h2 {
+    color: #931420;
+}
+/* the styles for the article*/
+article {
+    padding-top: .5em;
+    padding-bottom: .5ems;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+article h1 {
+    font-size: 150%;
+    padding-top: .5ems;
+    margin: 0;
+}
+article img {
+    float: right;
+    padding: 0;
+    border: 1px solid black;
+}
+article h2 {
+    padding-top: 0;
+}
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25ems;
+}
+/* styles for sidebarB*/
+#sidebarB {
+    float: right;
+    width: 200px;
+    position: right;
+}
+#sidebarB h2{
+    color: #931420;
+}
+/* the styles for the footer */
+footer {
+    margin-top: 793px;
+    width: 1006px;
+	background-color: #931420;
+    clear: right;
+    margin-left: -5px;
+}
+footer p {
+	text-align: center;
+	color: white;
+	padding: 1em 0;
+}
 
