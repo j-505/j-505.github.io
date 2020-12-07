@@ -1,21 +1,59 @@
-/* the styles for the elements */
+
 * {
-	margin: 0;
-	padding: 0;
+  box-sizing: border-box;
 }
-html {
-	background-color: white;
-}
-body {
-	font-family: Arial, Helvetica, sans-serif;
+
+.wrapper {   
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 100%;
-    width: 1000px;
+    max-width: 1000px;
     margin: 0 auto;
     border: 3px solid #931420;
-    background-color: lightgray;
-    height: 1075px;
+    background-color: black;
+    height: 100%;
+
 }
-<--NAVBAR-->
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  
+}
+
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: purple;
+  color: #ffffff;
+  padding: 2px;
+    
+}
+.header img{
+    float:left;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 100px; 
+    height: auto;
+}
+
+.header h1{
+    padding-left: 120px;
+}
+
+.header h3{
+    padding-left: 120px;
+}
+
+/* Navbar */
 
 .nav{
     border:1px solid #ccc;
@@ -23,7 +61,6 @@ body {
     list-style:none;
     margin:0;
     text-align:center;
-
 }
 .nav li{
     display:inline;
@@ -39,107 +76,51 @@ a:focus, a:hover {
 }
 
 
-/* Links */
-
-.ForMore {
-    float: right;
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* the styles for the header */
-header {
-	padding: 1.5em 0 2em 0;
-	border-bottom: 3px solid #931420;
-	background-image: -moz-linear-gradient(
-	    30deg, 	#FFB6C1 0%, 	#FFB6C1 30%, white 50%, 	#FFB6C1 80%, 	#FFB6C1 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, 	#FFB6C1 0%, 	#FFB6C1 30%, white 50%, 	#FFB6C1 80%, 	#FFB6C1 100%);
-	background-image: -o-linear-gradient(
-	    30deg, 	#FFB6C1 0%, 	#FFB6C1 30%, white 50%, 	#FFB6C1 80%, 	#FFB6C1 100%);
-	background-image: linear-gradient(
-	    30deg, 	#FFB6C1 0%, 	#FFB6C1 30%, white 50%, 	#FFB6C1 80%, 	#FFB6C1 100%);
-}
-header h2 {
-	font-size: 175%;
-	color: #800000;
-}
-header h3 {
-	font-size: 130%;
-	font-style: italic;
-}
-header img {
-	float: left;
-	padding: 0 30px;
-}
-.shadow {
-	text-shadow: 2px 2px 2px #800000;
-}
-/* the styles for the main content */
-main {
-    float: left;
-}
-/* the h1 styles for exercise 5-1*/
-/*main h1 {
-	font-size: 150%;
-    border-top: 3px solid #931420;
-    border-bottom: 3px solid #931420;
-    padding: .3em 0;
-} */
-
-main h2 {
-	color: #800000;
-	font-size: 130%;
-	padding: .5em 0 .25em 0;
-}
-main h3 {
-	font-size: 105%;
-	padding-bottom: .25em;
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: orange;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
 }
 
-main p {
-	padding-bottom: .5em;
+.menu li:hover {
+  background-color: darkorange;
 }
-main blockquote {
-	padding: 0 2em;
-	font-style: italic;
-}
-main ul {
-	padding: 0 0 .25em 1.25em;
-    margin-bottom: 15px;
-}
-main li {
-	padding-bottom: .35em;
-    
-}
-main section {
-    width: 525px;
-    float: right;
-    padding-right: 30px;
-    padding-left: 30px;
-}
-#sidebarA {
+
+/* SideBarA */
+
+.sidebarA {
     width: 200px;
     float: left;
-    padding: 80px 0px 10px 30px;
 }
-#sidebarA h2 {
-    color: #931420;
+.sidebarA h2 {
+    color: white;
     text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 25px;
+    
 }
 
-#sidebarA h3 {
+.sidebarA h3 {
     font-size: 18px;
 }
 
 
-#sidebarA li {
-    padding: 10px 0px 0px 0px;
-}
+
+
 
 /* the styles for the article*/
 article {
-    padding-top: 0;
-    border-top: 2px solid #800000;
-    border-bottom: 2px solid #800000;
+    border-top: 2px solid white;
+    color:white;
 }
 article h1 {
     font-size: 150%;
@@ -149,7 +130,7 @@ article h1 {
 article img {
     float: right;
     padding: 5px;
-    border: 1px solid black;
+    border: 1px solid white;
 }
 article h1 {
     padding: 10px 2px;
@@ -163,8 +144,14 @@ article h3 {
     padding-bottom: .25ems;
 }
 .CB {
-    padding-right: 140px;
     text-indent: 20px;
+    border-bottom: 2px solid white;
+    height: 210px;
+
+}
+
+a {
+    color: white;
 }
 
 /* styles for the bottom middle column */
@@ -190,48 +177,67 @@ article h3 {
 }
 
 /* styles for sidebarB*/
-#sidebarB {
+.sidebarB {
     float: right;
     width: 200px;
     position: right;
-    padding: 10px 10px 10px 0px;
-}
-#sidebarB h2{
+    color: white;
     text-align: center;
-    color: #931420;
+    font-size: 18px;
+}
+.sidebarB h3:hover {
+  background-color: darkorange;
+}
+.sidebarB h2{
+    text-align: center;
+    color: white;
     padding: 10px;
+    border: solid 2px white;
 }
-#sidebarB h3{
-text-align: center;
-    padding: 5px;
+.sidebarB h3{
+    border: solid 2px;
+    background-color: orange;
+    text-align: center;
+    padding-right: 10px;
 }
-#sidebarB img{
-    width: 50px;
-    height: 70px;
+.sidebarB img{
+    width: 70px;
+    height: 80px;
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-
+    margin: auto;
+    border: solid 2px white;
 }
 
-* {
-  box-sizing: border-box;
+.footer {
+  background-color: purple;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+@media only screen and (max-width: 725px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
 }
 
 
-
-
-
-/* the styles for the footer */
-footer {
-    margin-top: 855px;
-    width: 1006px;
-	background-color: #931420;
-    clear: right;
-    margin-left: -3px;
-}
-footer p {
-	text-align: center;
-	color: white;
-	padding: 1em 0;
-}
