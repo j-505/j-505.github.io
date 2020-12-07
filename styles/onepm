@@ -1,1 +1,245 @@
 
+* {
+  box-sizing: border-box;
+}
+
+.wrapper {   
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: black;
+    height: 100%;
+
+}
+.row::after {
+  content: "";
+  clear: both;
+  display: block;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+  
+}
+
+
+html {
+  font-family: "Lucida Sans", sans-serif;
+}
+
+.header {
+  background-color: purple;
+  color: #ffffff;
+  padding: 2px;
+    
+}
+.header img{
+    float:left;
+    padding-top: 15px;
+    padding-left: 10px;
+    width: 100%;
+    max-width: 100px; 
+    height: auto;
+}
+
+.header h1{
+    padding-left: 120px;
+}
+
+.header h3{
+    padding-left: 120px;
+}
+
+/* Navbar */
+
+.nav{
+    border:1px solid #ccc;
+    border-width:1px 0;
+    list-style:none;
+    margin:0;
+    text-align:center;
+}
+.nav li{
+    display:inline;
+    font-family: fantasy;
+    font-size: 20px;
+}
+.nav a{
+    display:inline-block;
+    padding:20px 50px 20px 25px;
+}
+a:focus, a:hover {
+	font-style: italic;
+}
+
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  padding: 8px;
+  margin-bottom: 7px;
+  background-color: orange;
+  color: #ffffff;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+.menu li:hover {
+  background-color: darkorange;
+}
+
+/* SideBarA */
+
+.sidebarA {
+    width: 200px;
+    float: left;
+}
+.sidebarA h2 {
+    color: white;
+    text-align: center;
+    border: 2px solid white;
+    padding: 10px;
+    font-size: 25px;
+    
+}
+
+.sidebarA h3 {
+    font-size: 18px;
+}
+
+
+
+
+
+/* the styles for the article*/
+article {
+    border-top: 2px solid white;
+    text-align: left;
+    color:white;
+}
+article h1 {
+    font-size: 150%;
+    padding-top: .5ems;
+    margin: 0;
+}
+article img {
+    float: right;
+    padding: 5px;
+    border: 1px solid white;
+}
+article h1 {
+    padding: 10px 2px;
+    text-align: center;
+}
+article h2 {
+    padding-top: 0;
+}
+article h3 {
+    font-size: 105%;
+    padding-bottom: .25ems;
+}
+.CB {
+    text-indent: 20px;
+    border-bottom: 2px solid white;
+    height: 210px;
+
+}
+
+a {
+    color: white;
+}
+
+/* styles for the bottom middle column */
+
+.Episodeimages img{
+    width: 120px;
+    height: 100px;
+    
+}
+.BottomColumn {
+    padding: 10px;  
+}
+
+
+/*Flexbox Container */
+
+.flex-container {
+    display: flex;
+}
+
+.titlebottomcolumn {
+    padding-top: 8px;
+}
+
+
+
+/* styles for sidebarB*/
+.sidebarB {
+    float: right;
+    width: 200px;
+    position: right;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+}
+.sidebarB h3:hover {
+  background-color: darkorange;
+}
+.sidebarB h2{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    border: solid 2px white;
+}
+.sidebarB h3{
+    border: solid 2px;
+    background-color: orange;
+    text-align: center;
+    padding-right: 10px;
+}
+.sidebarB img{
+    max-width: 100%;
+    width: 70px;
+    display: block;
+    margin: auto;
+    border: solid 2px white;
+}
+
+.footer {
+  background-color: purple;
+  color: #ffffff;
+  text-align: center;
+  font-size: 12px;
+  padding: 8px;
+}
+
+/* For desktop: */
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+
+
+
+@media only screen and (max-width: 725px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
