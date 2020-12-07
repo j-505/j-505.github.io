@@ -12,8 +12,8 @@ body {
     width: 1000px;
     margin: 0 auto;
     border: 3px solid #931420;
-    background-color: white;
-    height: 956px;
+    background-color: lightgray;
+    height: 1075px;
 }
 <--NAVBAR-->
 
@@ -23,18 +23,26 @@ body {
     list-style:none;
     margin:0;
     text-align:center;
-    font-family: cursive;
-    font-weight: bold;
+
 }
 .nav li{
     display:inline;
+    font-family: fantasy;
+    font-size: 20px;
 }
 .nav a{
     display:inline-block;
-    padding:20px 60px 20px 10px;
+    padding:20px 50px 20px 25px;
 }
 a:focus, a:hover {
 	font-style: italic;
+}
+
+
+/* Links */
+
+.ForMore {
+    float: right;
 }
 
 /* the styles for the header */
@@ -86,9 +94,7 @@ main h3 {
 	font-size: 105%;
 	padding-bottom: .25em;
 }
-main img {
-	padding-bottom: 1em;
-}
+
 main p {
 	padding-bottom: .5em;
 }
@@ -107,18 +113,23 @@ main li {
 main section {
     width: 525px;
     float: right;
-    padding-right: 10px;
-    padding-left: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 #sidebarA {
-    width: 175px;
+    width: 200px;
     float: left;
-padding: 30px 0px 10px 30px;
-    
+    padding: 80px 0px 10px 30px;
 }
 #sidebarA h2 {
     color: #931420;
+    text-align: center;
 }
+
+#sidebarA h3 {
+    font-size: 18px;
+}
+
 
 #sidebarA li {
     padding: 10px 0px 0px 0px;
@@ -126,8 +137,7 @@ padding: 30px 0px 10px 30px;
 
 /* the styles for the article*/
 article {
-    padding-top: .5em;
-    padding-bottom: .5ems;
+    padding-top: 0;
     border-top: 2px solid #800000;
     border-bottom: 2px solid #800000;
 }
@@ -138,8 +148,12 @@ article h1 {
 }
 article img {
     float: right;
-    padding: 0;
+    padding: 5px;
     border: 1px solid black;
+}
+article h1 {
+    padding: 10px 2px;
+    text-align: center;
 }
 article h2 {
     padding-top: 0;
@@ -148,22 +162,73 @@ article h3 {
     font-size: 105%;
     padding-bottom: .25ems;
 }
+.CB {
+    padding-right: 140px;
+    text-indent: 20px;
+}
+
+/* styles for the bottom middle column */
+
+.Episodeimages img{
+    width: 120px;
+    height: 100px;
+    
+}
+.BottomColumn {
+    padding: 10px;  
+}
+
+
+/*Flexbox Container */
+
+.flex-container {
+    display: flex;
+}
+
+.titlebottomcolumn {
+    padding-top: 8px;
+}
+
 /* styles for sidebarB*/
 #sidebarB {
     float: right;
     width: 200px;
     position: right;
+    padding: 10px 10px 10px 0px;
 }
 #sidebarB h2{
+    text-align: center;
     color: #931420;
+    padding: 10px;
 }
+#sidebarB h3{
+text-align: center;
+    padding: 5px;
+}
+#sidebarB img{
+    width: 50px;
+    height: 70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
 /* the styles for the footer */
 footer {
-    margin-top: 793px;
+    margin-top: 855px;
     width: 1006px;
 	background-color: #931420;
     clear: right;
-    margin-left: -5px;
+    margin-left: -3px;
 }
 footer p {
 	text-align: center;
